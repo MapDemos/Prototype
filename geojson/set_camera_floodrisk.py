@@ -58,5 +58,5 @@ camera_all_gdf = gpd.GeoDataFrame(pd.concat([camera_scam_gdf, camera_cctv_gdf], 
 camera_all_geojson = json.loads(camera_all_gdf.to_json())
 
 # Save the updated GeoJSON to a new file
-with open('camera_all_portal.geojson', 'w') as f:
+with open('camera_all_20191012060000.geojson', 'w') as f:
     json.dump(camera_all_geojson, f)
