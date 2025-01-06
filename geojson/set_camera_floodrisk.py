@@ -40,7 +40,13 @@ def update_floodrisk(camera_gdf, flood_risk_gdf, flood_risk_idx):
         possible_matches = flood_risk_gdf.iloc[possible_matches_index]
         for _, flood_risk in possible_matches.iterrows():
             if camera.geometry.within(flood_risk.geometry):
-                flood_risk_value = flood_risk['FLOODRISK']
+                if flood_risk['TYPE'] == "1":
+                    flood_risk_value = flood_risk['FLOODRISK']
+                elif flood_risk['TYPE'] == "2":
+                    flood_risk_value = flood_risk['FLOODFCST']
+                else:
+                    continue
+
                 if flood_risk_value is not None:
                     flood_risk_value = int(flood_risk_value)
                     current_flood_risk = int(camera_gdf.at[idx, 'FLOODRISK'])
