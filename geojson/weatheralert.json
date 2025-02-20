@@ -1,0 +1,106 @@
+{
+    "updatetime": "2022-08-03T09:00:00",
+    "publishtime": "2022-08-03T09:00:00",
+    "data": [
+            {
+            "pref": 13,
+            "prefName": "東京都",
+            "regions": [
+                {
+                    "regioncode": "1310100",
+                    "regionname": "中央区",
+                    "warnings": [
+                        {
+                            "name": "大雨特別警報",
+                            "code": "33",
+                            "level": 5,
+                            "status": "発表",
+                            "note": ["土砂災害警戒","浸水警戒"]
+                        },
+                        {
+                            "name": "洪水警報",
+                            "code": "04",
+                            "level": 4,
+                            "status": "発表",
+                            "note": ["土砂災害警戒","浸水警戒"]
+                        }
+                    ],
+                    "maxValue": 5
+                },
+                {
+                    "regioncode": "1310300",
+                    "regionname": "港区",
+                    "warnings": [
+                        {
+                            "name": "高潮警報",
+                            "code": "08",
+                            "level": 4,
+                            "status": "発表",
+                            "note": ["竜巻","ひょう"]
+                        }
+                    ],
+                    "maxValue": 4
+                },
+                {
+                    "regioncode": "1311300",
+                    "regionname": "渋谷区",
+                    "warnings": [
+                        {
+                            "name": "大雨警報",
+                            "code": "03",
+                            "level": 3,
+                            "status": "発表",
+                            "note": ["土砂災害警戒","浸水警戒"]
+                        }
+                    ],
+                    "maxValue": 3
+                }
+            ],
+            "maxValue": 5,
+            "headline_text": "【特別警報（大雨）】東京都に大雨特別警報を発表しています。土砂災害や低い土地の浸水、河川の増水、暴風、高波、高潮に最大限に警戒をしてください。"
+        },
+        {
+            "pref": 14,
+            "prefName": "神奈川県",
+            "regions": [
+                {
+                    "regioncode": "1420300",
+                    "regionname": "平塚市",
+                    "warnings": [
+                        {
+                            "name": "大雨注意報",
+                            "code": "10",
+                            "level": 2,
+                            "status": "発表",
+                            "note": []
+                        },
+                        {
+                            "name": "波浪注意報",
+                            "code": "16",
+                            "level": 2,
+                            "status": "発表",
+                            "note": []
+                        }
+                    ],
+                    "maxValue": 2
+                },
+                {
+                    "regioncode": "1420400",
+                    "regionname": "鎌倉市",
+                    "warnings": [
+                        {
+                            "name": "暴風警報",
+                            "code": "05",
+                            "level": 3,
+                            "status": "発表",
+                            "note": ["突風"]
+                        }
+                    ],
+                    "maxValue": 3
+                }
+            ],
+            "maxValue": 3,
+            "headline_text": "【警報（暴風）】神奈川県に暴風警報を発表しています。"
+        }
+    ]
+}
